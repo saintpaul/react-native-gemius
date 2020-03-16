@@ -38,6 +38,11 @@ public class RNReactNativeGemiusModule extends ReactContextBaseJavaModule {
   }
 
   @ReactMethod
+  public void setLoggingEnabled(Boolean isLoggingEnabled) {
+    com.gemius.sdk.Config.setLoggingEnabled(isLoggingEnabled);
+  }
+
+  @ReactMethod
   public void setGemiusInfo(String host, String scriptIdentifierIos, String scriptIdentifierAndroid) {
     AudienceConfig.getSingleton().setHitCollectorHost(host);
     AudienceConfig.getSingleton().setScriptIdentifier(scriptIdentifierAndroid);
