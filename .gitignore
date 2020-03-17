@@ -36,3 +36,11 @@ buck-out/
 # Android/IntelliJ
 #
 
+/.idea/
+/android/.gradle/
+/android/.idea/
+/android/gradle/wrapper/
+/android/android.iml
+/android/gradlew
+/android/gradlew.bat
+/android/local.properties
