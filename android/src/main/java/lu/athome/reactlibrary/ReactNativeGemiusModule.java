@@ -4,7 +4,9 @@ import com.facebook.react.bridge.ReactApplicationContext;
 import com.facebook.react.bridge.ReactContextBaseJavaModule;
 import com.facebook.react.bridge.ReactMethod;
 import com.facebook.react.bridge.Callback;
+
 import android.util.Log;
+
 import com.gemius.sdk.*;
 import com.gemius.sdk.Config;
 import com.gemius.sdk.audience.AudienceConfig;
@@ -30,26 +32,25 @@ public class ReactNativeGemiusModule extends ReactContextBaseJavaModule {
         return "ReactNativeGemius";
     }
 
-@ReactMethod
-  public void setAppInfo(String app, String version) {
-    com.gemius.sdk.Config.setAppInfo(app, version);
-  }
+    @ReactMethod
+    public void setAppInfo(String app, String version) {
+        com.gemius.sdk.Config.setAppInfo(app, version);
+    }
 
-  @ReactMethod
-  public void setLoggingEnabled(Boolean isLoggingEnabled) {
-    com.gemius.sdk.Config.setLoggingEnabled(isLoggingEnabled);
-  }
+    @ReactMethod
+    public void setLoggingEnabled(Boolean isLoggingEnabled) {
+        com.gemius.sdk.Config.setLoggingEnabled(isLoggingEnabled);
+    }
 
-  @ReactMethod
-  public void setGemiusInfo(String host, String scriptIdentifierIos, String scriptIdentifierAndroid) {
-    AudienceConfig.getSingleton().setHitCollectorHost(host);
-    AudienceConfig.getSingleton().setScriptIdentifier(scriptIdentifierAndroid);
-  }
+    @ReactMethod
+    public void setGemiusInfo(String host, String scriptIdentifierIos, String scriptIdentifierAndroid) {
+        AudienceConfig.getSingleton().setHitCollectorHost(host);
+        AudienceConfig.getSingleton().setScriptIdentifier(scriptIdentifierAndroid);
+    }
 
-
-  @ReactMethod
-  public void sendPageViewedEvent() {
-    AudienceEvent event = new AudienceEvent(reactContext);
-    event.sendEvent();
-  }
+    @ReactMethod
+    public void sendPageViewedEvent() {
+        AudienceEvent event = new AudienceEvent(reactContext);
+        event.sendEvent();
+    }
 }
