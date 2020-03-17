@@ -2,10 +2,15 @@
 {
   "name": "react-native-gemius",
   "version": "1.0.0",
-  "description": "",
+  "description": "React native Native module for Gemius Audience module",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/athome-group/react-native-gemius",
+    "baseUrl": "https://github.com/athome-group/react-native-gemius"
   },
   "keywords": [
     "react-native",
@@ -13,14 +18,17 @@
     "cim",
     "cim.be"
   ],
-  "author": "Oussama Ghalbzouri",
+  "author": {
+    "name": "AthomeGroup",
+    "email": "mobileteam@athome.eu"
+  },
   "license": "Gemius SDK is not open-source. Please contact Gemius for more infos.",
   "peerDependencies": {
     "react": "*",
     "react-native": "*"
   },
   "devDependencies": {
-    "react": "^16.2.0",
-    "react-native": "^0.52.1"
+    "react": "^16.9.0",
+    "react-native": "^0.61.5"
   }
 }

@@ -2,7 +2,7 @@
 //  AudienceEvent.h
 //  GemiusSDK
 //
-//  Copyright (c) 2016 Gemius. All rights reserved.
+//  Copyright © 2018 Gemius. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>

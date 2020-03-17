@@ -2,7 +2,7 @@
 //  AdDefine.h
 //  GemiusSDK
 //
-//  Copyright (c) 2016 Gemius. All rights reserved.
+//  Copyright © 2018 Gemius. All rights reserved.
 //
 
 #ifndef AdDefine_h
@@ -10,6 +10,7 @@
 
 typedef void (^onGEMAdReadyBlock)(BOOL hasAd);
 typedef void (^onGEMFailBlock)(NSError *error);
-typedef void (^onGEMAdClosedBlock)();
+typedef void (^onGEMAdClosedBlock)(void);
+typedef void (^onGEMContentReadyBlock)(void);
 
 #endif /* AdDefine_h */
