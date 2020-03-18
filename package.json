@@ -1,6 +1,6 @@
 {
   "name": "react-native-gemius",
-  "version": "1.0.0",
+  "version": "1.0",
   "description": "React native Native module for Gemius Audience module",
   "main": "index.js",
   "scripts": {
