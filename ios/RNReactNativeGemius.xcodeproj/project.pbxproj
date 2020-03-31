@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		B3E7B58A1CC2AC0600A0062D /* RNReactNativeGemius.m in Sources */ = {isa = PBXBuildFile; fileRef = B3E7B5891CC2AC0600A0062D /* RNReactNativeGemius.m */; };
+		C291F20E24336E79000EFF2A /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C291F20824334F3E000EFF2A /* AdSupport.framework */; };
+		C291F20F24336E8B000EFF2A /* GemiusSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C291F20A24334F77000EFF2A /* GemiusSDK.framework */; };
+		C291F21124336EAD000EFF2A /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C291F20C24334F8B000EFF2A /* SystemConfiguration.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -36,6 +39,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C291F21124336EAD000EFF2A /* SystemConfiguration.framework in Frameworks */,
+				C291F20E24336E79000EFF2A /* AdSupport.framework in Frameworks */,
+				C291F20F24336E8B000EFF2A /* GemiusSDK.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
