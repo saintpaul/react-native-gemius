@@ -14,7 +14,8 @@ Pod::Spec.new do |s|
   # s.license    = { :type => "Gemius has specific licence", :file => "FILE_LICENSE" }
   s.authors      = { "atHomeGroup" => "mobileteam@athome.eu" }
   s.platforms    = { :ios => "9.0" }
-  s.source       = { :git => "https://github.com/https://github.com/athome-group/react-native-gemius/react-native-gemius.git", :tag => "#{s.version}" }
+  s.source       = { :git => "https://github.com/https://github.com/athome-group/react-native-gemius/react-native-gemius.git#develop"}
+  # s.source       = { :git => "https://github.com/https://github.com/athome-group/react-native-gemius/react-native-gemius.git", :tag => "#{s.version}" }
 
   s.source_files = "ios/**/*.{h,m,swift}"
   s.requires_arc = true
