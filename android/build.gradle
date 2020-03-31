@@ -12,7 +12,7 @@
 
 def DEFAULT_COMPILE_SDK_VERSION = 28
 def DEFAULT_BUILD_TOOLS_VERSION = '28.0.3'
-def DEFAULT_MIN_SDK_VERSION = 21
+def DEFAULT_MIN_SDK_VERSION = 16
 def DEFAULT_TARGET_SDK_VERSION = 28
 
 def safeExtGet(prop, fallback) {
@@ -33,7 +33,7 @@ buildscript {
             jcenter()
         }
         dependencies {
-            classpath 'com.android.tools.build:gradle:3.4.2'
+            classpath 'com.android.tools.build:gradle:3.4.1'
         }
     }
 }
@@ -73,8 +73,20 @@ repositories {
 dependencies {
     //noinspection GradleDynamicVersion
     implementation 'com.facebook.react:react-native:+'  // From node_modules
-    // CIM
-    implementation(fileTree(dir: 'libs', includes: ['*.jar', 'gemius_mobile_plugin_android/GemiusSDK_1.7.0.aar']))
+    // def libs = fileTree(dir: 'libs', include: '**/GemiusSDK*.aar')
+    //def sdkAar = libs.isEmpty() ? null : libs.last()
+    //def sdkAarName = sdkAar?.name?.take(sdkAar?.name?.lastIndexOf('.'))
+
+    //if (sdkAarName != null) {
+    println "lib Gemius will be implemented"
+    //implementation(name: sdkAarName, ext:'aar')
+    implementation fileTree(dir: 'libs', include: '**/GemiusSDK*.aar')
+    implementation 'com.google.android.gms:play-services-base:15.0.1'
+    implementation 'com.google.android.gms:play-services-ads:15.0.1'
+    implementation 'com.google.code.gson:gson:2.8.5'
+    //} else {
+    //println "lib Gemius not found!"
+    //}
 }
 
 def configureReactNativePom(def pom) {
@@ -84,7 +96,7 @@ def configureReactNativePom(def pom) {
         name packageJson.title
         artifactId packageJson.name
         version = packageJson.version
-        group = "lu.athome.reactlibrary"
+        group = "lu.athome"
         description packageJson.description
         url packageJson.repository.baseUrl
 

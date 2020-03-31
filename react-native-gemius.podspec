@@ -9,12 +9,12 @@ Pod::Spec.new do |s|
   s.description  = <<-DESC
                   react-native-gemius
                    DESC
-  s.homepage     = "https://github.com/athome-group/react-native-gemius"
-  s.license      = "MIT"
-  # s.license    = { :type => "MIT", :file => "FILE_LICENSE" }
-  s.authors      = { "Your Name" => "yourname@email.com" }
+  s.homepage     = "https://github.com/https://github.com/athome-group/react-native-gemius/react-native-gemius"
+  s.license      = "Gemius has specific licence"
+  # s.license    = { :type => "Gemius has specific licence", :file => "FILE_LICENSE" }
+  s.authors      = { "atHomeGroup" => "mobileteam@athome.eu" }
   s.platforms    = { :ios => "9.0" }
-  s.source       = { :git => "https://github.com/athome-group/react-native-gemius", :tag => "#{s.version}" }
+  s.source       = { :git => "https://github.com/https://github.com/athome-group/react-native-gemius/react-native-gemius.git", :tag => "#{s.version}" }
 
   s.source_files = "ios/**/*.{h,m,swift}"
   s.requires_arc = true

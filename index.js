@@ -1,5 +1,5 @@
 import { NativeModules } from 'react-native';
 
-const { ReactNativeGemius } = NativeModules;
+const { RNReactNativeGemius } = NativeModules;
 
-export default ReactNativeGemius;
+export default RNReactNativeGemius;

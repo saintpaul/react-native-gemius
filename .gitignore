@@ -28,19 +28,15 @@ DerivedData
 *.xcuserstate
 project.xcworkspace
 
+# Android/IntelliJ
+#
+build/
+.idea
+.gradle
+local.properties
+*.iml
+
 # BUCK
 buck-out/
 \.buckd/
 *.keystore
-
-# Android/IntelliJ
-#
-
-/.idea/
-/android/.gradle/
-/android/.idea/
-/android/gradle/wrapper/
-/android/android.iml
-/android/gradlew
-/android/gradlew.bat
-/android/local.properties
