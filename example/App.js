@@ -19,7 +19,7 @@ export default class App extends Component<{}> {
   };
   componentDidMount() {
     try {
-      RNReactNativeGemius.sampleMethod('Testing', 123, (message) => {
+      RNReactNativeGemius.sampleMethod('Testing', 456, (message) => {
         this.setState({
           status: 'Native callback received',
           message,
@@ -29,7 +29,7 @@ export default class App extends Component<{}> {
       console.log('TRACKING::GEMIUS::sampleMethod failed: ', error);
     }
     try {
-      RNReactNativeGemius.setAppInfo('atHome.lu', '0.0.1');
+      RNReactNativeGemius.setAppInfo('atHome.lu', '0.0.3');
       RNReactNativeGemius.setGemiusInfo(
         'https://galu.hit.gemius.pl',
         'bPblRse1ibFjlJsGSvqLIpbBDfZI3xtEqedoSGJIaBb.E7',
