@@ -1,6 +1,6 @@
 #import "RNReactNativeGemius.h"
 #import <React/RCTLog.h>
-#import <GemiusSDK/GemiusSDK.h>
+#import <GemiusSDK.h>
 
 @implementation RNReactNativeGemius
 

@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		B3E7B58A1CC2AC0600A0062D /* RNReactNativeGemius.m in Sources */ = {isa = PBXBuildFile; fileRef = B3E7B5891CC2AC0600A0062D /* RNReactNativeGemius.m */; };
-		C20F02182436004800C7B3F5 /* GemiusSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C291F20A24334F77000EFF2A /* GemiusSDK.framework */; };
 		C291F20E24336E79000EFF2A /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C291F20824334F3E000EFF2A /* AdSupport.framework */; };
 		C291F21124336EAD000EFF2A /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C291F20C24334F8B000EFF2A /* SystemConfiguration.framework */; };
 /* End PBXBuildFile section */
@@ -30,8 +29,27 @@
 		B3E7B5881CC2AC0600A0062D /* RNReactNativeGemius.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RNReactNativeGemius.h; sourceTree = "<group>"; };
 		B3E7B5891CC2AC0600A0062D /* RNReactNativeGemius.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RNReactNativeGemius.m; sourceTree = "<group>"; };
 		C291F20824334F3E000EFF2A /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/AdSupport.framework; sourceTree = DEVELOPER_DIR; };
-		C291F20A24334F77000EFF2A /* GemiusSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GemiusSDK.framework; sourceTree = "<group>"; };
 		C291F20C24334F8B000EFF2A /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/SystemConfiguration.framework; sourceTree = DEVELOPER_DIR; };
+		C29A342C243607CC001C044E /* GEMFullScreenAd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GEMFullScreenAd.h; sourceTree = "<group>"; };
+		C29A342D243607CD001C044E /* EventProgramData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EventProgramData.h; sourceTree = "<group>"; };
+		C29A342E243607CD001C044E /* AdDefine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AdDefine.h; sourceTree = "<group>"; };
+		C29A342F243607CD001C044E /* ProgramData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProgramData.h; sourceTree = "<group>"; };
+		C29A3430243607CD001C044E /* ContentData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContentData.h; sourceTree = "<group>"; };
+		C29A3431243607CD001C044E /* BaseEvent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseEvent.h; sourceTree = "<group>"; };
+		C29A3432243607CD001C044E /* BaseConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseConfig.h; sourceTree = "<group>"; };
+		C29A3433243607CD001C044E /* GEMBillboardAd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GEMBillboardAd.h; sourceTree = "<group>"; };
+		C29A3434243607CD001C044E /* AdOceanConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AdOceanConfig.h; sourceTree = "<group>"; };
+		C29A3435243607CD001C044E /* AdData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AdData.h; sourceTree = "<group>"; };
+		C29A3436243607CD001C044E /* Player.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Player.h; sourceTree = "<group>"; };
+		C29A3437243607CD001C044E /* EventAdData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EventAdData.h; sourceTree = "<group>"; };
+		C29A3438243607CD001C044E /* NetpanelEvent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NetpanelEvent.h; sourceTree = "<group>"; };
+		C29A3439243607CD001C044E /* NetpanelConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NetpanelConfig.h; sourceTree = "<group>"; };
+		C29A343A243607CD001C044E /* AudienceEvent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AudienceEvent.h; sourceTree = "<group>"; };
+		C29A343B243607CD001C044E /* EventData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EventData.h; sourceTree = "<group>"; };
+		C29A343C243607CD001C044E /* PlayerData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlayerData.h; sourceTree = "<group>"; };
+		C29A343D243607CD001C044E /* GemiusSDK.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GemiusSDK.h; sourceTree = "<group>"; };
+		C29A343E243607CD001C044E /* Config.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Config.h; sourceTree = "<group>"; };
+		C29A343F243607CD001C044E /* AudienceConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AudienceConfig.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -39,7 +57,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C20F02182436004800C7B3F5 /* GemiusSDK.framework in Frameworks */,
 				C291F21124336EAD000EFF2A /* SystemConfiguration.framework in Frameworks */,
 				C291F20E24336E79000EFF2A /* AdSupport.framework in Frameworks */,
 			);
@@ -59,6 +76,26 @@
 		58B511D21A9E6C8500147676 = {
 			isa = PBXGroup;
 			children = (
+				C29A3435243607CD001C044E /* AdData.h */,
+				C29A342E243607CD001C044E /* AdDefine.h */,
+				C29A3434243607CD001C044E /* AdOceanConfig.h */,
+				C29A343F243607CD001C044E /* AudienceConfig.h */,
+				C29A343A243607CD001C044E /* AudienceEvent.h */,
+				C29A3432243607CD001C044E /* BaseConfig.h */,
+				C29A3431243607CD001C044E /* BaseEvent.h */,
+				C29A343E243607CD001C044E /* Config.h */,
+				C29A3430243607CD001C044E /* ContentData.h */,
+				C29A3437243607CD001C044E /* EventAdData.h */,
+				C29A343B243607CD001C044E /* EventData.h */,
+				C29A342D243607CD001C044E /* EventProgramData.h */,
+				C29A3433243607CD001C044E /* GEMBillboardAd.h */,
+				C29A342C243607CC001C044E /* GEMFullScreenAd.h */,
+				C29A343D243607CD001C044E /* GemiusSDK.h */,
+				C29A3439243607CD001C044E /* NetpanelConfig.h */,
+				C29A3438243607CD001C044E /* NetpanelEvent.h */,
+				C29A3436243607CD001C044E /* Player.h */,
+				C29A343C243607CD001C044E /* PlayerData.h */,
+				C29A342F243607CD001C044E /* ProgramData.h */,
 				B3E7B5881CC2AC0600A0062D /* RNReactNativeGemius.h */,
 				B3E7B5891CC2AC0600A0062D /* RNReactNativeGemius.m */,
 				134814211AA4EA7D00B7C361 /* Products */,
@@ -70,7 +107,6 @@
 			isa = PBXGroup;
 			children = (
 				C291F20C24334F8B000EFF2A /* SystemConfiguration.framework */,
-				C291F20A24334F77000EFF2A /* GemiusSDK.framework */,
 				C291F20824334F3E000EFF2A /* AdSupport.framework */,
 			);
 			name = Frameworks;
