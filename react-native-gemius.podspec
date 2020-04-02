@@ -15,15 +15,11 @@ Pod::Spec.new do |s|
   s.platforms    = { :ios => "9.0" }
   s.source       = { :git => "https://github.com/https://github.com/athome-group/react-native-gemius/react-native-gemius.git", :tag => "#{s.version}" }
 
-  s.public_header_files = "GemiusSDK.framework/Headers/*.h"
-
   s.source_files = "ios/**/*.{h,m}"
   s.requires_arc = true
   s.exclude_files = "ios/example"
 
   s.dependency "React"
-  s.dependency "react-native-gemius/GemiusSDK.framework"
-  "
 
 end
 
