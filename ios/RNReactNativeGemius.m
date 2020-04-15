@@ -1,15 +1,17 @@
 #import "RNReactNativeGemius.h"
+#import <GemiusSDK/GemiusSDK.h>
 #import <React/RCTLog.h>
-#import <GemiusSDK.h>
 
 @implementation RNReactNativeGemius
 
 RCT_EXPORT_MODULE()
 
+// used in example project
 RCT_EXPORT_METHOD(sampleMethod:(NSString *)stringArgument numberParameter:(nonnull NSNumber *)numberArgument callback:(RCTResponseSenderBlock)callback)
 {
     // TODO: Implement some actually useful functionality
-    callback(@[[NSString stringWithFormat: @"NumberArgument: %@ StringArgument: %@", numberArgument, stringArgument]]);
+      [[GEMConfig sharedInstance] setAppInfo:@"AdOceanSDK_Demo" version:@"1.8.0"];
+    callback(@[[NSString stringWithFormat: @"NumberArguments: %@ StringArgument: %@", numberArgument, stringArgument]]);
 }
 
 RCT_EXPORT_METHOD(setAppInfo:(NSString *)app version:(NSString *)version)

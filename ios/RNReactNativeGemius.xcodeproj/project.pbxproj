@@ -7,9 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		C26EB2BB244711DA00A3B0F3 /* GemiusSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C26EB2BA244711DA00A3B0F3 /* GemiusSDK.framework */; };
-		C291F20E24336E79000EFF2A /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C291F20824334F3E000EFF2A /* AdSupport.framework */; };
-		C291F21124336EAD000EFF2A /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C291F20C24334F8B000EFF2A /* SystemConfiguration.framework */; };
+		B3E7B58A1CC2AC0600A0062D /* RNReactNativeGemius.m in Sources */ = {isa = PBXBuildFile; fileRef = B3E7B5891CC2AC0600A0062D /* RNReactNativeGemius.m */; };
+		C291F20424333080000EFF2A /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C291F20324333080000EFF2A /* AdSupport.framework */; };
+		C291F2062433308C000EFF2A /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C291F2052433308C000EFF2A /* SystemConfiguration.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -26,9 +26,10 @@
 
 /* Begin PBXFileReference section */
 		134814201AA4EA6300B7C361 /* libRNReactNativeGemius.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libRNReactNativeGemius.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		C26EB2BA244711DA00A3B0F3 /* GemiusSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GemiusSDK.framework; sourceTree = "<group>"; };
-		C291F20824334F3E000EFF2A /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/AdSupport.framework; sourceTree = DEVELOPER_DIR; };
-		C291F20C24334F8B000EFF2A /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/SystemConfiguration.framework; sourceTree = DEVELOPER_DIR; };
+		B3E7B5881CC2AC0600A0062D /* RNReactNativeGemius.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RNReactNativeGemius.h; sourceTree = "<group>"; };
+		B3E7B5891CC2AC0600A0062D /* RNReactNativeGemius.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RNReactNativeGemius.m; sourceTree = "<group>"; };
+		C291F20324333080000EFF2A /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/AdSupport.framework; sourceTree = DEVELOPER_DIR; };
+		C291F2052433308C000EFF2A /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/SystemConfiguration.framework; sourceTree = DEVELOPER_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -36,9 +37,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C291F21124336EAD000EFF2A /* SystemConfiguration.framework in Frameworks */,
-				C26EB2BB244711DA00A3B0F3 /* GemiusSDK.framework in Frameworks */,
-				C291F20E24336E79000EFF2A /* AdSupport.framework in Frameworks */,
+				C291F2062433308C000EFF2A /* SystemConfiguration.framework in Frameworks */,
+				C291F20424333080000EFF2A /* AdSupport.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,17 +56,18 @@
 		58B511D21A9E6C8500147676 = {
 			isa = PBXGroup;
 			children = (
-				C26EB2BA244711DA00A3B0F3 /* GemiusSDK.framework */,
+				B3E7B5881CC2AC0600A0062D /* RNReactNativeGemius.h */,
+				B3E7B5891CC2AC0600A0062D /* RNReactNativeGemius.m */,
 				134814211AA4EA7D00B7C361 /* Products */,
-				C291F20724334F3E000EFF2A /* Frameworks */,
+				C291F20024333069000EFF2A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
-		C291F20724334F3E000EFF2A /* Frameworks */ = {
+		C291F20024333069000EFF2A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				C291F20C24334F8B000EFF2A /* SystemConfiguration.framework */,
-				C291F20824334F3E000EFF2A /* AdSupport.framework */,
+				C291F2052433308C000EFF2A /* SystemConfiguration.framework */,
+				C291F20324333080000EFF2A /* AdSupport.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -128,6 +129,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B3E7B58A1CC2AC0600A0062D /* RNReactNativeGemius.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -240,7 +242,11 @@
 					"$(SRCROOT)/../../../React/**",
 					"$(SRCROOT)/../../react-native/React/**",
 				);
-				LIBRARY_SEARCH_PATHS = "$(inherited)";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/GemiusSDK.framework",
+					"$(PROJECT_DIR)",
+				);
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = RNReactNativeGemius;
 				SKIP_INSTALL = YES;
@@ -260,7 +266,11 @@
 					"$(SRCROOT)/../../../React/**",
 					"$(SRCROOT)/../../react-native/React/**",
 				);
-				LIBRARY_SEARCH_PATHS = "$(inherited)";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/GemiusSDK.framework",
+					"$(PROJECT_DIR)",
+				);
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = RNReactNativeGemius;
 				SKIP_INSTALL = YES;
