@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		B3E7B58A1CC2AC0600A0062D /* RNReactNativeGemius.m in Sources */ = {isa = PBXBuildFile; fileRef = B3E7B5891CC2AC0600A0062D /* RNReactNativeGemius.m */; };
+		C21DC4A124487E0A002D55FC /* GemiusSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C21DC4A024487E0A002D55FC /* GemiusSDK.framework */; };
 		C291F20424333080000EFF2A /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C291F20324333080000EFF2A /* AdSupport.framework */; };
 		C291F2062433308C000EFF2A /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C291F2052433308C000EFF2A /* SystemConfiguration.framework */; };
 /* End PBXBuildFile section */
@@ -28,6 +29,7 @@
 		134814201AA4EA6300B7C361 /* libRNReactNativeGemius.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libRNReactNativeGemius.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		B3E7B5881CC2AC0600A0062D /* RNReactNativeGemius.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RNReactNativeGemius.h; sourceTree = "<group>"; };
 		B3E7B5891CC2AC0600A0062D /* RNReactNativeGemius.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RNReactNativeGemius.m; sourceTree = "<group>"; };
+		C21DC4A024487E0A002D55FC /* GemiusSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GemiusSDK.framework; sourceTree = "<group>"; };
 		C291F20324333080000EFF2A /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/AdSupport.framework; sourceTree = DEVELOPER_DIR; };
 		C291F2052433308C000EFF2A /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/SystemConfiguration.framework; sourceTree = DEVELOPER_DIR; };
 /* End PBXFileReference section */
@@ -37,6 +39,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C21DC4A124487E0A002D55FC /* GemiusSDK.framework in Frameworks */,
 				C291F2062433308C000EFF2A /* SystemConfiguration.framework in Frameworks */,
 				C291F20424333080000EFF2A /* AdSupport.framework in Frameworks */,
 			);
@@ -66,6 +69,7 @@
 		C291F20024333069000EFF2A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				C21DC4A024487E0A002D55FC /* GemiusSDK.framework */,
 				C291F2052433308C000EFF2A /* SystemConfiguration.framework */,
 				C291F20324333080000EFF2A /* AdSupport.framework */,
 			);
