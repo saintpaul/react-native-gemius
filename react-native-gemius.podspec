@@ -18,6 +18,7 @@ Pod::Spec.new do |s|
   s.source_files = "ios/**/*.{h,m}"
   s.requires_arc = true
   s.exclude_files = "ios/example"
+  s.vendored_frameworks = 'ios/GemiusSDK.framework'
 
   s.dependency "React"
 
