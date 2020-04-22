@@ -41,3 +41,5 @@ buck-out/
 \.buckd/
 *.keystore
 /example/ios/Podfile.lock
+/example/node_modules/react-native-gemius/ios/RNReactNativeGemius.xcworkspace/xcshareddata/IDEWorkspaceChecks.plist
+/ios/RNReactNativeGemius.xcworkspace/xcshareddata/IDEWorkspaceChecks.plist
