@@ -37,4 +37,10 @@ RCT_EXPORT_METHOD(sendPageViewedEvent)
     [event sendEvent];
 }
 
+RCT_EXPORT_METHOD(getWebViewUserAgent:(RCTResponseSenderBlock)callback)
+{
+  NSString *userAgent = [[GEMConfig sharedInstance] getUA4WebView];
+  callback(@[userAgent]);
+}
+
 @end
