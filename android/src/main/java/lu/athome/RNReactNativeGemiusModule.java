@@ -2,10 +2,13 @@ package lu.athome;
 
 import android.util.Log;
 
+import com.facebook.react.bridge.NativeModule;
 import com.facebook.react.bridge.ReactApplicationContext;
+import com.facebook.react.bridge.ReactContext;
 import com.facebook.react.bridge.ReactContextBaseJavaModule;
 import com.facebook.react.bridge.ReactMethod;
 import com.facebook.react.bridge.Callback;
+
 import com.gemius.sdk.Config;
 import com.gemius.sdk.audience.AudienceConfig;
 import com.gemius.sdk.audience.AudienceEvent;
@@ -13,14 +16,13 @@ import com.gemius.sdk.audience.BaseEvent.EventType;
 
 
 public class RNReactNativeGemiusModule extends ReactContextBaseJavaModule {
-
-    private final ReactApplicationContext reactContext;
+    private static ReactApplicationContext reactContext;
     private String scriptIdentifierAndroid;
     private String collectorHost;
 
-    public RNReactNativeGemiusModule(ReactApplicationContext reactContext) {
-        super(reactContext);
-        this.reactContext = reactContext;
+    public RNReactNativeGemiusModule(ReactApplicationContext context) {
+        super(context);
+        reactContext = context;
     }
 
     @Override
@@ -58,11 +60,20 @@ public class RNReactNativeGemiusModule extends ReactContextBaseJavaModule {
     }
 
     @ReactMethod
+    public void getWebViewUserAgent(Callback successCallback) {
+        String userAgent = Config.getUA4WebView(reactContext);
+
+        successCallback.invoke(userAgent);
+    }
+
+    @ReactMethod
     public void sendPageViewedEvent() {
+        Log.d("RNGemius", "Preparing Gemius event with script identifier: " + this.scriptIdentifierAndroid);
         AudienceEvent event = new AudienceEvent(reactContext);
 
         event.setScriptIdentifier(this.scriptIdentifierAndroid);
         event.setEventType(EventType.FULL_PAGEVIEW);
         event.sendEvent();
+        Log.d("RNGemius", "Successfully send Gemius event");
     }
 }
