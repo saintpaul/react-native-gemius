@@ -32,7 +32,8 @@ RCT_EXPORT_METHOD(setGemiusInfo:(NSString *)host scriptIdentifierIos:(NSString *
 
 RCT_EXPORT_METHOD(sendPageViewedEvent)
 {
-    GEMAudienceEvent *event = [GEMAudienceEvent new];
+    GEMAudienceEvent *event = [[GEMAudienceEvent alloc] init];
+    [event setEventType:GEM_EVENT_FULL_PAGEVIEW];
     [event sendEvent];
 }
 
