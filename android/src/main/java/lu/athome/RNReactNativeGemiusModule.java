@@ -9,11 +9,14 @@ import com.facebook.react.bridge.Callback;
 import com.gemius.sdk.Config;
 import com.gemius.sdk.audience.AudienceConfig;
 import com.gemius.sdk.audience.AudienceEvent;
+import com.gemius.sdk.audience.BaseEvent.EventType;
 
 
 public class RNReactNativeGemiusModule extends ReactContextBaseJavaModule {
 
     private final ReactApplicationContext reactContext;
+    private String scriptIdentifierAndroid;
+    private String collectorHost;
 
     public RNReactNativeGemiusModule(ReactApplicationContext reactContext) {
         super(reactContext);
@@ -49,12 +52,17 @@ public class RNReactNativeGemiusModule extends ReactContextBaseJavaModule {
     public void setGemiusInfo(String host, String scriptIdentifierIos, String scriptIdentifierAndroid) {
         AudienceConfig.getSingleton().setHitCollectorHost(host);
         AudienceConfig.getSingleton().setScriptIdentifier(scriptIdentifierAndroid);
-    }
 
+        this.scriptIdentifierAndroid = scriptIdentifierAndroid;
+        this.collectorHost = host;
+    }
 
     @ReactMethod
     public void sendPageViewedEvent() {
         AudienceEvent event = new AudienceEvent(reactContext);
+
+        event.setScriptIdentifier(this.scriptIdentifierAndroid);
+        event.setEventType(EventType.FULL_PAGEVIEW);
         event.sendEvent();
     }
 }
